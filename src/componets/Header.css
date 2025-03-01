@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: antiquewhite;
+}
+
+.searchInp{
+    width: 70%;
+    height: 30px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.searchBtn{
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: rgb(230, 162, 162);
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./componets/Header";
 
 // React.createElement => reactElement(JS Object) => HTMLElement(render)
 // const heading = React.createElement(
@@ -38,7 +39,45 @@ const Comp1 = () => (
     {/* {Comp()} */}
   </>
 );
-//
+
+// Assignments:
+// Q1. Create a Nested header Element using React.createElement(h1,h2,h3 inside a div with class “title”)
+// const div = React.createElement("div", { class: "title" }, [
+//   React.createElement("h1", null, "Heading 1"),
+//   React.createElement("h2", null, "Heading 2"),
+//   React.createElement("h3", null, "Heading 3"),
+// ]);
+
+// Create the same element using JSX
+const div = (
+  <div className="title">
+    {/* <> */}
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    {/* </> */}
+  </div>
+);
+
+const CreateDiv2 = () => (
+      <div className="title">{div}</div>
+  );
+
+const CreateDiv = () => (
+  //   <div className="title">{div}</div>
+  <>
+  <CreateDiv2 />
+  <div className="title">
+    <h1>Heading 4</h1>
+    <h2>Heading 5</h2>
+    <h3>Heading 6</h3>
+  </div>
+  {CreateDiv2()}
+  <CreateDiv2> </CreateDiv2>
+  </>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("hello"));
 
-root.render(<Comp1 />);
+// root.render(<CreateDiv />);
+root.render(<Header />);
