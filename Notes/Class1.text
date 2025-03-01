@@ -1,0 +1,54 @@
+- What is `NPM`?
+Ans: Its is a package manager for installing and managing javascript dependencies. 
+     Also maintains package.json. 
+     It does not have any fullform but Node Package Manager is considered as its full form.
+
+- What is `Parcel/Webpack`? Why do we need it?
+Ans: They are bundlers, and us to bundle our application and compress, optimize it for production.
+
+- What is `.parcel-cache`?
+Ans: 
+
+- What is `npx`?
+Ans: npx(Node package execute) is execution tool that allows you to run node.js packages direcly without installing them globally.
+     It handals versioning issues by ensuring the atest or specific version of a package is executed.
+
+- What is differennce between `dependancies` vs `devDependencies`?
+Ans: Dependancies: are normal dependacies which can go on in production.
+     devDependencies: are dependacies which are development phase specific. such as bundlers(Parcel, vite, webpack).
+
+- What is Tree Shaking?
+Ans: 
+
+- What is Hot Module Replacement?
+Ans: 
+
+- List down your favourite 5 superpowers of Parcel ad describe any 3 of them in your own words.
+Ans: 
+
+- What is `.gitignore`? What should we add and not add into it? 
+Ans: .gitignore is a file extention which contains the name of files or folders that are to be ignored while pushing the code on git. 
+     We should always add the folders and files which can be auto created on some commands(like, node_modules)
+     We can add .env file to .gitignore file just to keep our environment variables safe and secured.
+     It is not recomended to add package.json and package-lock.json files to .gitignore file as the contains all the core dependancies.
+
+- What is the difference between `package.json` and `package-lock.json` 
+Ans: package.json contains all the dependancies and their versions on which the app is running.
+     package-lock.json contains their exact version of thoes dependancies on this date.
+
+- Why should I not modify `package-lock.json`? 
+Ans: It might be hamfult to your app build.
+
+- What is `node_modules` ? Is it a good idea to push that on git? 
+Ans: node_modules contains all the acul code of packages/ dependacies that we have installed for our app. It is a heavy object.
+     And we should not push it to git.
+
+- What is the `dist` folder? 
+Ans: 
+
+- What is `browserlists`?
+Ans: browserlists contains the list of browswer with their specific versions on which we want our app to run. 
+
+- Read about:  ^ - caret and ~ - tilda
+Ans: caret(^) : It is used to keep the dependacies of a application free to accept ay minor updates in their versions.
+     tilda(~) : It is used to keep the dependacies open to accept major updates in their versions(not recomended).

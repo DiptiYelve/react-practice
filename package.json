@@ -2,8 +2,9 @@
   "name": "react",
   "version": "1.0.0",
   "description": "React practice with Namaste React course",
-  "main": "index.js",
   "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "jest"
   },
   "repository": {
@@ -26,5 +27,8 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-  }
+  },
+  "browserlists":[
+    "last 2 version"
+  ]
 }
