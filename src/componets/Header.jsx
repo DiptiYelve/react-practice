@@ -1,30 +1,33 @@
 import React from "react";
-import { FcAcceptDatabase } from "react-icons/fc";
-import { FcSearch } from "react-icons/fc";
-import { FcReading } from "react-icons/fc";
 import "./Header.css";
+import { LOGO_URL } from "../utils/config";
 
 const Header = () => (
-    <div className="container">
-      <div>
-        <a href="#">
-          <FcAcceptDatabase />
-        </a>
-      </div>
+  <div className="container">
+  <div className="logo">
+    <a href="#">
+      <img src={LOGO_URL} alt="logo" />
+    </a>
+  </div>
 
-      <div>
-        <input className="searchInp" type="text" placeholder="Search..." />
-        <button className="searchBtn">
-          <FcSearch />
-        </button>
-      </div>
+  <div>
+    <ul className="navLinks">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+        <a href="#">Cart</a>
+      </li>
+    </ul>
+  </div>
 
-      <div>
-        <a href="">
-          <FcReading />
-        </a>
-      </div>
-    </div>
+</div>
   )
 
 export default Header;

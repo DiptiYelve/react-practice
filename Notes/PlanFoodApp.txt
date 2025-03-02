@@ -1,0 +1,20 @@
+- App
+    - Header
+        - logo
+        - navlinks
+            - link
+    - Body
+        - serchContainer
+            - searchBar
+            - searchBtn
+        - cardContainer
+            - card
+                - cardImg
+                - cardTitle
+                - cardReview
+                - cardPrice
+    - Footer
+        - copyright claim
+        - links
+            - facebook
+            - insta

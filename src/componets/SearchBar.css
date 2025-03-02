@@ -1,0 +1,36 @@
+/* Searchbar */
+.shimer-search {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .shimer-searchInp {
+    width: 35%;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(203, 199, 199, 0.2);
+  }
+  
+  .shimer-searchBtn {
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: rgba(203, 199, 199, 0.2);
+  }
+
+  .shimer-filter{
+    background-color: rgba(203, 199, 199, 0.2);
+    border: none;
+    height: 42px;
+    width: 165px;
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+  

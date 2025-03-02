@@ -1,24 +1,33 @@
+/* Navbar */
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    background-color: antiquewhite;
+    background-color: white;
+    position: sticky;
+    box-shadow: 0 2px 0 0 rgba(203, 199, 199, 0.2);
 }
 
-.searchInp{
-    width: 70%;
-    height: 30px;
-    border: none;
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks > li{
+    list-style-type: none;
+    text-decoration: none;
     margin-right: 10px;
-    border-radius: 20px;
-    text-align: center;
 }
 
-.searchBtn{
-    border: none;
-    height: 30px;
-    width: 30px;
-    border-radius: 20px;
-    background-color: rgb(230, 162, 162);
+.navLinks > li > a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+
+.logo > a > img{
+    width: 100px;
+    height: 50px;
 }

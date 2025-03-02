@@ -1,0 +1,34 @@
+/* cartContainer */
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.shimer-card {
+  width: 320px;
+  height: 400px;
+  margin: 10px;
+  background-color: rgba(203, 199, 199, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.shimer-cardBody {
+  padding: 0px 20px;
+}
+
+.shimer-card:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.shimer-rating {
+  background-color: rgb(231, 228, 228);
+  width: 40px;
+  color: white;
+  padding: 5px;
+}
