@@ -1,7 +1,7 @@
 import React from "react";
-import "./SearchBar.css";
+import "./ShimerNav.css";
 
-const SearchBar = () => {
+const ShimerNav = () => {
   return (
     <div className="shimer-search">
     <input className="shimer-searchInp" type="text" placeholder="" />
@@ -13,4 +13,4 @@ const SearchBar = () => {
   );
 }
 
-export default SearchBar;
+export default ShimerNav;

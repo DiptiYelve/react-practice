@@ -1,12 +1,12 @@
 import React from "react";
 import "./Header.css";
 import { LOGO_URL } from "../utils/config";
-
+import logo from "../utils/logo.png";
 const Header = () => (
   <div className="container">
   <div className="logo">
     <a href="#">
-      <img src={LOGO_URL} alt="logo" />
+      <img src={logo} alt="logo" />
     </a>
   </div>
 

@@ -1,40 +1,40 @@
 /* Body */
-    /* Searchbar */
+/* Searchbar */
 .search {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .searchInp {
-    width: 35%;
-    height: 40px;
-    border: none;
-    margin-right: 10px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgba(203, 199, 199, 0.2);
-  }
-  
-  .searchBtn {
-    border: none;
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    background-color: antiquewhite;
-    margin-right: 20px;
-  }
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-  .filter{
-    background-color: green;
-    border: none;
-    color: white;
-    padding: 0px 10px;
-    border-radius: 5px;
-  }
+.searchInp {
+  width: 35%;
+  height: 40px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(203, 199, 199, 0.2);
+}
 
-  .filter:hover{
-    background-color: darkgreen;
-    cursor: pointer;
-  }
+.searchBtn {
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  margin-right: 20px;
+}
+
+.filter {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+.filter:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}

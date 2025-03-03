@@ -1,6 +1,6 @@
 import CardContainer from "./CardContainer";
 import ShimerCards from "./ShimerCards";
-import SearchBar from "./SearchBar";
+import ShimerNav from "./ShimerNav";
 import { useEffect, useState } from "react";
 
 import { FcSearch } from "react-icons/fc";
@@ -45,13 +45,16 @@ const Body = () => {
         (res) =>
           res.card.card.info.name.includes(searchData) ||
           res.card.card.info.cuisines.includes(searchData)
-      ))
+      )
+    );
 
     setSearchData("");
   };
 
   const handalclick = () => {
-    setFilteredData(filteredData.filter((res) => res.card.card.info.avgRating > 4));
+    setFilteredData(
+      filteredData.filter((res) => res.card.card.info.avgRating > 4)
+    );
   };
 
   useEffect(() => {
@@ -65,7 +68,7 @@ const Body = () => {
     const newData = await res.json();
     const thisData =
       newData.data.cards[0].groupedCard.cardGroupMap.RESTAURANT.cards;
-      console.log(searchData);
+    console.log(searchData);
 
     //* 2nd way to optimize search *//
     // if (searchData === "") {
@@ -79,14 +82,14 @@ const Body = () => {
     //     )
     //   );
     // }
-    
+
     setData(thisData);
     setFilteredData(thisData);
   };
 
   return data.length === 0 ? (
     <>
-      <SearchBar /> <ShimerCards />
+      <ShimerNav /> <ShimerCards />
     </>
   ) : (
     <div>
