@@ -1,0 +1,13 @@
+.error{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.errorImg{
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 0 8 10 0 rgba(0, 0, 0, 0.2);
+}
