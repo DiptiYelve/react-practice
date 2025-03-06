@@ -7,6 +7,7 @@ import Footer from "./componets/Footer";
 import About from "./componets/About";
 import Contact from "./componets/Contact";
 import Error from "./componets/Error";
+import MenuItemComponent from "./componets/MenuItemComponent";
 
 import "./App.css";
 
@@ -34,6 +35,10 @@ import "./App.css";
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/restaurante/:resID",
+          element: <MenuItemComponent />,
         }
       ],
       errorElement: <Error />

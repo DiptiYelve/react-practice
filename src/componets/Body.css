@@ -38,3 +38,9 @@
   background-color: darkgreen;
   cursor: pointer;
 }
+
+/* Link component */
+
+.link{
+  text-decoration: none;
+}

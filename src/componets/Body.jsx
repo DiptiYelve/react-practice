@@ -2,6 +2,8 @@ import CardContainer from "./CardContainer";
 import ShimerCards from "./ShimerCards";
 import ShimerNav from "./ShimerNav";
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
+import { SWGGIY_API_URL } from "../utils/config";
 
 import { FcSearch } from "react-icons/fc";
 
@@ -62,9 +64,7 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const res = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/search/v3?lat=19.0473216&lng=73.0699046&str=kharghar&trackingId=undefined&submitAction=ENTER&queryUniqueId=f86394b2-db0c-01d8-da3e-f5487f99e159&selectedPLTab=RESTAURANT"
-    );
+    const res = await fetch(SWGGIY_API_URL);
     const newData = await res.json();
     const thisData =
       newData.data.cards[0].groupedCard.cardGroupMap.RESTAURANT.cards;
@@ -110,7 +110,7 @@ const Body = () => {
       </div>
       <div className="cardContainer">
         {filteredData.map((res) => (
-          <CardContainer key={res.card.card.info.id} data={res} />
+          <Link className="link" key={res.card.card.info.id} to={"/restaurante/"+ res.card.card.info.id}> <CardContainer data={res} /> </Link>
         ))}
       </div>
     </div>
