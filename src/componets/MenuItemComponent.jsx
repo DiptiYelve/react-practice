@@ -1,5 +1,4 @@
-import { SWGGIY_MENU_API_URL } from "../utils/config";
-import { useEffect, useState } from "react";
+import useResMenu from "../utils/useResMenu";
 import { useParams } from "react-router-dom";
 import ShimerCards from "./ShimerCards";
 import "./MenuItemComponent.css";
@@ -7,23 +6,11 @@ import "./MenuItemComponent.css";
 import { MENU_IMG_URL } from "../utils/config";
 
 const MenuItemComponent = () => {
-  const [resData, setResData] = useState([]);
   const { resID } = useParams();
 
-  // console.log("Menu: ");
-  // console.log(menuData);
+  const resData = useResMenu(resID);
 
-  useEffect(() => {
-    fetchMenuData();
-  }, []);
-
-  const fetchMenuData = async () => {
-    const menuData = await fetch(SWGGIY_MENU_API_URL + resID);
-    const menuDataJSON = await menuData.json();
-    setResData(menuDataJSON.data);
-  };
-
-  if (resData.length === 0) return <ShimerCards />;
+  if (resData === null) return <ShimerCards />;
 
   const { name, avgRating, locality, city, cuisines } =
     resData?.cards[2]?.card?.card?.info;
