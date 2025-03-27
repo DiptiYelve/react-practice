@@ -4,7 +4,7 @@ import ShimerNav from "./ShimerNav";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { SWGGIY_API_URL } from "../utils/config";
-
+import useOnlineStatus from "../utils/useOnlineStatus";
 import { FcSearch } from "react-icons/fc";
 
 import "./Body.css";
@@ -15,6 +15,7 @@ const Body = () => {
 
   const [searchData, setSearchData] = useState("");
 
+  const onlineStatus = useOnlineStatus();
   const handalInp = (e) => {
     setSearchData(e.target.value);
   };
@@ -86,6 +87,10 @@ const Body = () => {
     setData(thisData);
     setFilteredData(thisData);
   };
+
+  if(onlineStatus === false){
+    return <h1>Sorry, you are offlineI!!! Try again once connected to internet.</h1>
+  }
 
   return data.length === 0 ? (
     <>
